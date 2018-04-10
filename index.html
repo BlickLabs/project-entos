@@ -21,28 +21,28 @@
   </div>
   <div class="navbar-links-container">
     <div class="navbar-link-container">
-      <a href="index.html" class="">
+      <a href="#home" class="go-section">
         <span class="fs-h4 gotham-medium">Home</span>
       </a>
-      <div class="navbar-decorator"></div>
+      <div class="navbar-decorator" id="home-decorator"></div>
     </div>
     <div class="navbar-link-container">
-      <a href="index.html" class="">
+      <a href="#ventures" class="go-section">
         <span class="fs-h4 gotham-medium">Ventures</span>
       </a>
-      <div class="navbar-decorator"></div>
+      <div class="navbar-decorator" id="ventures-decorator"></div>
     </div>
     <div class="navbar-link-container">
-      <a href="index.html" class="">
+      <a href="#blog" class="go-section">
         <span class="fs-h4 gotham-medium">Blog</span>
       </a>
       <div class="navbar-decorator"></div>
     </div>
     <div class="navbar-link-container">
-      <a href="index.html" class="">
+      <a href="#contact" class="go-section">
         <span class="fs-h4 gotham-medium">Contact</span>
       </a>
-      <div class="navbar-decorator"></div>
+      <div class="navbar-decorator" id="contact-decorator"></div>
     </div>
   </div>
 </nav>
@@ -69,40 +69,42 @@
     </div>
   </div>
 
-  <div class="home">
+  <div class="home" id="home">
     <div class="home-title-container">
       <h1 class="fs-mega gotham-medium">We Invest in the most valuable Ventures</h1>
     </div>
     <h3 class="fs-h1 gotham-medium">Innovation Beyond Measure</h3>
-    <div class="home-card">
-      <div class="home-card-logo-container">
-        <img class="home-card-logo" src="img/logos/logo-eo.png">
-      </div>
-      <div class="home-card-title-container">
-        <h1 class="fs-giga gotham-black">Healthcare<br>entrepreneur</h1>
-      </div>
-      <div class="home-card-info-container">
-        <div class="home-card-info-line"></div>
-        <div>
-          <h2 class="fs-kilo gotham-medium">Erick Ponce</h2>
-          <h3 class="fs-h1 gotham-medium">Healthcare Entrepreneur. Angel Investor.</h3>
-          <div class="home-card-info fs-h3 gotham-book">
-            <p>
-              Founder & CEO of Fadermex, dedicated to create a new venture of high quality healthcare services and products. 
-            </p>
-            <p>
-              LP at InvestoVC, seed capital fund based in San Francisco and Mexico City. Angel Investor at a wide range of healthcare, fin-tech and digital market startups.
-            </p>
+    <div class="home-card-container">
+      <div class="home-card">
+        <div class="home-card-logo-container">
+          <img class="home-card-logo" src="img/logos/logo-eo.png">
+        </div>
+        <div class="home-card-title-container">
+          <h1 class="fs-giga gotham-black">Healthcare<br>entrepreneur</h1>
+        </div>
+        <div class="home-card-info-container">
+          <div class="home-card-info-line"></div>
+          <div>
+            <h2 class="fs-kilo gotham-medium">Erick Ponce</h2>
+            <h3 class="fs-h1 gotham-medium">Healthcare Entrepreneur. Angel Investor.</h3>
+            <div class="home-card-info fs-h3 gotham-book">
+              <p>
+                Founder & CEO of Fadermex, dedicated to create a new venture of high quality healthcare services and products. 
+              </p>
+              <p>
+                LP at InvestoVC, seed capital fund based in San Francisco and Mexico City. Angel Investor at a wide range of healthcare, fin-tech and digital market startups.
+              </p>
+            </div>
+            <a href="https://earn.com/eponce/" target="_blank">
+              <button class="entos-button fs-h5 gotham-book">Ask me anything</button>
+            </a>
           </div>
-          <a href="https://earn.com/eponce/" target="_blank">
-            <button class="entos-button fs-h5 gotham-book">Ask me anything</button>
-          </a>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="ventures">
+  <div class="ventures" id="ventures">
     <h2 class="fs-mega gotham-medium">Ventures</h2>
     <h3 class="fs-h1 gotham-book">Some of our projects</h3>
     <div class="ventures-carousel owl-carousel">
@@ -235,6 +237,37 @@
       <span class="ventures-counter-slash">/</span>
       <span id="ventures-counter-total" class="ventures-counter-total"></span>
     </div>
+  </div>
+
+  <div class="tweets" id="tweets">
+    <div class="tweets-info-container">
+      <h2 class="fs-mega gotham-medium">My tweets</h2>
+      <h3 class="fs-h1 gotham-book">Stay up to the latest news</h3>
+    </div>
+    <a class="twitter-timeline" href="https://twitter.com/R4ulMarty?ref_src=twsrc%5Etfw">Tweets by R4ulMarty</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+
+  <div class="contact" id="contact">
+    <h1 class="fs-giga gotham-black">Contact me</h1>
+    <div class="contact-send-container">
+      <div class="contact-line"></div>
+      <div>
+        <h3 class="fs-mega gotham-medium">Send me your info</h3>
+      </div>
+    </div>
+    <form class="contact-form" name="contact-entos">
+      <div class="contact-input-container">
+        <label class="fs-h2 gotham-medium" for="name">Name</label>
+        <input class="contact-input" type="text" id="name" name="name">
+      </div>
+      <div class="contact-input-container">
+        <label class="fs-h2 gotham-medium" for="e-mail">E-mail</label>
+        <input class="contact-input" type="email" id="e-mail" name="email">
+      </div>
+      <div>
+        <button class="entos-button fs-h5 gotham-book" type="submit">Send</button>
+      </div>
+    </form>
   </div>
 </div>
 
