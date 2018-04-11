@@ -8,7 +8,8 @@
     
     <link rel="stylesheet" href="css/project-entos.libs.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link runat="server" rel="shortcut icon" href="img/favicon/favicon-entos.png" type="image/x-icon"/>
+    <link runat="server" rel="icon" href="img/favicon/favicon-entos.png" type="image/ico"/>
     <title>project-entos</title>
   </head>
   <body>
@@ -135,7 +136,7 @@
         </div>
         <div class="ventures-card-content card-fadermex">
           <div class="ventures-card-hover">
-            <img class="ventures-card-logo-fadermex" src="img/logos/logo-fadermex.png">
+            <img class="ventures-card-logo-fadermex-hover" src="img/logos/logo-fadermex.png">
             <div>
               <p class="fs-h6 gotham-book ventures-card-hover-paragraph">
                 A pharmaceutical-services company that creates in-house formulations (compounding) for the private and public sector.
@@ -247,6 +248,11 @@
     <a class="twitter-timeline" href="https://twitter.com/R4ulMarty?ref_src=twsrc%5Etfw">Tweets by R4ulMarty</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </div>
 
+  <div class="blog" id="blog">
+    <h2 class="fs-mega gotham-medium">Blog</h2>
+    <div class="blog-post-container"></div>
+  </div>
+
   <div class="contact" id="contact">
     <h1 class="fs-giga gotham-black">Contact me</h1>
     <div class="contact-send-container">
@@ -257,12 +263,18 @@
     </div>
     <form class="contact-form" name="contact-entos">
       <div class="contact-input-container">
-        <label class="fs-h2 gotham-medium" for="name">Name</label>
-        <input class="contact-input" type="text" id="name" name="name">
+        <div class="contact-input-content">
+          <label class="fs-h2 gotham-medium" for="name">Name</label>
+          <input class="fs-h2 contact-input gotham-book" type="text" id="name" name="name">
+          <span class="focus-border"></span>
+        </div>
       </div>
       <div class="contact-input-container">
-        <label class="fs-h2 gotham-medium" for="e-mail">E-mail</label>
-        <input class="contact-input" type="email" id="e-mail" name="email">
+        <div class="contact-input-content">
+          <label class="fs-h2 gotham-medium" for="e-mail">E-mail</label>
+          <input class="fs-h2 contact-input gotham-book" type="email" id="e-mail" name="email">
+          <span class="focus-border"></span>
+        </div>
       </div>
       <div>
         <button class="entos-button fs-h5 gotham-book" type="submit">Send</button>
@@ -278,7 +290,7 @@
   </div>
   <div class="footer-section-container">
     <a href="">
-      <span class="footer-section fs-h4 gotham-medium">Home</span>
+      <span class="footer-section fs-h4 gotham-medium" id="footer-home">Home</span>
     </a>
     <a href="">
       <span class="footer-section fs-h4 gotham-medium">Ventures</span>
