@@ -13,8 +13,19 @@ html
     font-size 13px
 
 body
+  background-color #3a3a3a
+  background-image url("../img/backgrounds/top-background.png"), 
+    url("../img/backgrounds/twitter-background.png"), 
+    url("../img/backgrounds/footer-background.png"), 
+    url("../img/backgrounds/decorator-background-two.png"),
+    url("../img/backgrounds/line-background.png"),
+    url("../img/backgrounds/decorator-background.png"),
+    url("../img/backgrounds/top-background.png")
+  background-position top, top 28% left, bottom, bottom left, top right -100px, left top 60%, left -400px top 65%
+  background-repeat no-repeat
+  background-size contain, 55%, contain, 60%, 40%, 70%, 90%
   font-size inherit
-  margin 0 0 600px 194px
+  margin 0 0 582px 194px
 
   &.noscroll
     overflow hidden
@@ -25,6 +36,8 @@ body
       z-index 9
 
 a
+  outline none
+
   &, &:focus, &:hover, &:active
     text-decoration none
 

@@ -14,9 +14,10 @@ venturesCarousel.owlCarousel ({
       items:1,
     },
     600:{
-      items:1,
+      items:3,
+      autoWidth: true
     },
-    1000:{
+    1770:{
       items:4,
     }
   }
