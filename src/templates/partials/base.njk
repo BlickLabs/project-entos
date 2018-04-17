@@ -7,7 +7,8 @@
     {% block extra_css %}{% endblock %}
     <link rel="stylesheet" href="css/{{ projectFilesName }}.libs.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link runat="server" rel="shortcut icon" href="img/favicon/favicon-entos.png" type="image/x-icon"/>
+    <link runat="server" rel="icon" href="img/favicon/favicon-entos.png" type="image/ico"/>
     <title>{% if section != 'index' %}{% block title %}{% endblock %} - {% endif %}{{ projectName }}</title>
   </head>
   <body>
