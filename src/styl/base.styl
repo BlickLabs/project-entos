@@ -13,17 +13,17 @@ html
     font-size 13px
 
 body
-  background-color #3a3a3a
   background-image url("../img/backgrounds/top-background.png"), 
     url("../img/backgrounds/twitter-background.png"), 
     url("../img/backgrounds/footer-background.png"), 
-    url("../img/backgrounds/decorator-background-two.png"),
+    url("../img/backgrounds/decorator-background-footer.png"),
     url("../img/backgrounds/line-background.png"),
     url("../img/backgrounds/decorator-background.png"),
-    url("../img/backgrounds/top-background.png")
-  background-position top, top 28% left, bottom, bottom left, top right -100px, left top 60%, left -400px top 65%
+    url("../img/backgrounds/background-blog.png"),
+    linear-gradient(to right, #3a3a3a, #121212)
+  background-position top, top 28% left, bottom, bottom -360px left -100px, top right -100px, left top 78%, left -400px top 65%
   background-repeat no-repeat
-  background-size contain, 55%, contain, 60%, 40%, 70%, 90%
+  background-size contain, 55%, contain, 90%, 40%, 100%, 90%
   font-size inherit
   margin 0 0 582px 194px
 
@@ -34,6 +34,10 @@ body
       content ' '
       opacity 1
       z-index 9
+
+@media screen and (max-width 900px)
+  body
+    margin 100px 0 582px 0
 
 a
   outline none
