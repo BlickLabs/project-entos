@@ -14,8 +14,9 @@
 
   &-line
     background-color $eGrayStrong
-    height 2px
+    height 1px
     margin 0 28px 0 0
+    opacity 0.5
     width 44px
 
   &-icon
@@ -42,7 +43,7 @@
 
   &-title
     &-container
-      max-width 592px
+      max-width 600px
 
   &-card
     background-image url("../img/backgrounds/line-background.png"), linear-gradient(88deg, #3d3d3d, #181818)
@@ -79,6 +80,7 @@
         background-color $eWhite
         height 1px
         margin 32px 45px 0 0
+        opacity 0.5
         width 74px
 
 .ventures
@@ -203,6 +205,7 @@
       background-color $eGrayStrong
       height 1px
       margin-right 24px
+      opacity 0.5
       width 74px
 
     &-slash
@@ -247,9 +250,9 @@
 
 .tweets
   background-image url("../img/backgrounds/twitter-background.png"), linear-gradient(94deg, #3b3b3b, #242424)
-  background-position center, center
+  background-position left
   background-repeat no-repeat
-  background-size cover
+  background-size 90%, cover
   display flex
   flex-direction row
   justify-content space-between
@@ -257,7 +260,7 @@
 
   &-info
     &-container
-      padding 50px 180px 0 90px
+      padding 50px 59px 0 90px
 
 .twitter-timeline
   width 50% !important
@@ -313,19 +316,26 @@
   display none
 
 .contact
-  background-color #3a3a3a
-  background-image url("../img/backgrounds/line-background.png")
-  background-position top right
+  background-image url("../img/backgrounds/line-background.png"), linear-gradient(89deg, #3d3d3d, #181818)
+  background-position top right -183px, center
   background-repeat no-repeat
-  background-size 44%
+  background-size 65%, cover
   box-shadow 0 2px 64px 0 rgba(0, 0, 0, 0.5)
   margin 184px 0 0 106px
   padding 80px 50px 124px 155px
+
+  &-subtitle
+    font-size remify(38px)
+
+  &-label
+    color #b8b8b8
+    font-size remify(20px)
 
   &-line
     background-color $eWhite
     height 1px
     margin-right 64px
+    opacity 0.5
     width 74px
 
   &-send
@@ -341,11 +351,12 @@
 
   &-input
     background-color transparent
-    border-bottom solid 1px $eGrayStrong
+    border-bottom solid 1px #979797cc
     border-left none
     border-right none
     border-top none
     color $eWhite
+    font-size remify(20px)
     padding-top 10px
     width 567px
 
@@ -405,3 +416,172 @@
 
 .tab-heading-01
   text-align center
+
+@media screen and (min-width 1202px) and (max-width 1270px)
+  .home-card
+    padding-left 50px
+
+@media screen and (min-width 769px) and (max-width 1370px)
+  .home-card-logo-container
+    right 30px
+    top 25px
+
+@media screen and (min-width 769px) and (max-width 1201px)
+  .home
+    margin-left 30px
+
+    &-card
+      padding 70px 30px
+
+  .ventures
+    padding-left 30px
+
+  .tweets
+    margin-left 30px
+
+    &-info
+      &-container
+        padding-left 0
+
+  .blog
+    margin-left 30px
+
+    &-post
+      &-info
+        &-container
+          padding 0 30px
+
+  .contact
+    margin-left 30px
+    padding-left 30px
+
+    &-send
+      &-container
+        align-items flex-start
+        flex-direction column
+        margin-top 0
+
+    &-line
+      margin 40px 0
+
+    &-form
+      margin-left 0
+
+@media screen and (max-width 768px)
+  .top-section
+    justify-content center
+    margin-bottom 70px
+    padding 40px 0 0 0
+
+  .home
+    margin-left 0
+    margin-right 0
+
+    &-title
+      &-container
+        margin 0 30px 30px 30px
+
+    &-subtitle
+      &-container
+        margin 0 30px
+
+    &-card
+      margin-top 60px
+      padding 120px 30px 50px 30px
+
+      &-container
+        padding-bottom 90px
+
+      &-logo
+        height 34px
+        width 110px
+
+        &-container
+          right 30px
+          top 30px
+
+      &-info
+        margin 30px 0 45px 0
+
+        &-container
+          flex-direction column
+          margin-top 0
+
+        &-line
+          margin 40px 0 20px 0
+
+  .ventures
+    padding 50px 30px 40px 30px
+
+    &-card
+      &-content
+        width 260px
+
+      &-hover
+        padding 40px 30px
+
+    &-controls
+      margin-top 50px
+
+    &-counter
+      &-container
+        bottom 56px
+        left 130px
+
+      &-line
+        width 35px
+
+  .tweets
+    background-size 100%
+    flex-direction column
+    margin 50px 0 0 0
+
+    &-info
+      &-container
+        padding 45px 30px 50px 30px
+
+  .twitter-timeline
+    margin 0 auto
+    width 80% !important
+
+  .blog
+    margin 70px 30px 0 30px
+
+    &-post
+      &-container
+        margin-top 40px
+
+      &-info
+        &-container
+          padding 20px 30px 30px
+          width 100%
+
+      &-content
+        flex-direction column
+        height auto
+
+      &-thumbnail
+        height 180px
+        width 100%
+
+  .contact
+    margin 70px 0 0 0
+    padding 50px 30px 60px 30px
+
+    &-send
+      &-container
+        align-items flex-start
+        flex-direction column
+        margin 0 0 45px 0
+
+    &-line
+      margin 30px 0
+
+    &-form
+      margin-left 0
+
+    &-input
+      width 260px
+
+      &-content
+        width 260px
