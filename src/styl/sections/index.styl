@@ -1,6 +1,5 @@
 .site
   &-container
-    //background-color #3a3a3a
     padding-bottom 0
 
 .top-section
@@ -469,9 +468,9 @@
 
 @media screen and (max-width 768px)
   .top-section
-    justify-content center
+    justify-content flex-end
     margin-bottom 70px
-    padding 40px 0 0 0
+    padding 40px 30px 0 0
 
   .home
     margin-left 0
@@ -479,7 +478,7 @@
 
     &-title
       &-container
-        margin 0 30px 30px 30px
+        margin 0 30px 18px 30px
 
     &-subtitle
       &-container
@@ -572,16 +571,23 @@
       &-container
         align-items flex-start
         flex-direction column
-        margin 0 0 45px 0
+        margin 25px 0 45px 0
+
+    &-subtitle
+      font-size remify(34px)
 
     &-line
-      margin 30px 0
+      display none
+      //margin 30px 0
 
     &-form
       margin-left 0
 
     &-input
       width 260px
+
+      &-container
+        margin-bottom 40px
 
       &-content
         width 260px
