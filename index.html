@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112166710-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-112166710-2');
+    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- <meta property="og:url" content="http://www.dim-sa.com.mx/" /> -->
@@ -273,18 +281,18 @@
         <h3 class="fs-mega gotham-medium contact-subtitle">Send me your info</h3>
       </div>
     </div>
-    <form class="contact-form" name="contact-entos">
+    <form class="contact-form" name="contact-entos" method="post" action="http://integrations.blick.mx/entos/contact/">
       <div class="contact-input-container">
         <div class="contact-input-content">
           <label class="fs-h2 gotham-medium contact-label" for="name">Name</label>
-          <input class="fs-h2 contact-input gotham-book" type="text" id="name" name="name">
+          <input class="fs-h2 contact-input gotham-book" type="text" id="name" name="name" required>
           <span class="focus-border"></span>
         </div>
       </div>
       <div class="contact-input-container">
         <div class="contact-input-content">
           <label class="fs-h2 gotham-medium contact-label" for="e-mail">E-mail</label>
-          <input class="fs-h2 contact-input gotham-book" type="email" id="e-mail" name="email">
+          <input class="fs-h2 contact-input gotham-book" type="email" id="e-mail" name="email" required>
           <span class="focus-border"></span>
         </div>
       </div>
