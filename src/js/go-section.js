@@ -1,36 +1,23 @@
-$(document).on("scroll", onScroll);
-
-$('a[href^="#"]').on('click', function (e) {
-  e.preventDefault();
-  $(document).off("scroll");
-  
-  $('.go-section').each(function () {
-    $(this).removeClass('active');
-  });
-  $(this).addClass('active');
-
-  var target = this.hash,
-      menu = target;
-  $target = $(target);
-  $('html, body').stop().animate({
-    'scrollTop': $target.offset().top + 2
-  }, 500, 'swing', function () {
-    window.location.hash = target;
-    $(document).on("scroll", onScroll);
-  });
+var clickHandler = ('ontouchstart' in document.documentElement ? "touchstart" : "click");
+var scrollLink = $('a.go-section');
+scrollLink.bind(clickHandler, function(e) {
+  var targetDiv = $(this).attr('href');
+  console.log(targetDiv);
+  $('html, body').animate({
+      scrollTop: $(targetDiv).offset().top - 100
+  }, 800);
 });
 
-function onScroll(event){
-  var scrollPos = $(document).scrollTop();
-  $('.go-section').each(function () {
-    var currLink = $(this);
-    var refElement = $(currLink.attr("href"));
-    if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-        $('.go-section').removeClass("active");
-        currLink.addClass("active");
+$(window).scroll(function() {
+  var scrollbarLocation = $(this).scrollTop();
+  
+  scrollLink.each(function() {
+    
+    var sectionOffset = $(this.hash).offset().top - 500;
+    
+    if ( sectionOffset <= scrollbarLocation ) {
+      $(this).parent().addClass('active');
+      $(this).parent().siblings().removeClass('active');
     }
-    else{
-        currLink.removeClass("active");
-    }
-  });
-}
+  });  
+});
