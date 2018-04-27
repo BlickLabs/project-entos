@@ -25,27 +25,27 @@
       flex-direction column
       padding 25px 0
 
-.go-section:after
-  background-color $eWhite
-  content ""
-  display none
-  height 63px
-  margin 10px auto 0 auto
-  width 1px
+      &:after
+        background-color $eWhite
+        content ""
+        display none
+        height 63px
+        margin 10px auto 0 auto
+        width 1px
 
-.go-section:hover:after
-  display block
+      &:hover:after
+        display block
 
-.go-section.active:after
-  display block
+      &.active:after
+        display block
 
-.go-section.active span
-  color $eWhite
-  font-weight bold
+      &.active a span
+        color $eWhite
+        font-weight bold
 
-.go-section span:hover
-  color $eWhite
-  font-weight bold
+      & span:hover
+        color $eWhite
+        font-weight bold
 
 @media screen and (max-width 900px)
   .navbar
@@ -70,15 +70,16 @@
     &-link
       &-container
         position relative
+
+        &:after
+          bottom 15px
+          height 1px
+          margin 0
+          position absolute
+          width 100%
+
         &:first-child
           display none
 
         &:nth-child(3)
           margin 0 20px
-
-    .go-section:after
-      bottom 15px
-      height 1px
-      margin 0
-      position absolute
-      width 100%
