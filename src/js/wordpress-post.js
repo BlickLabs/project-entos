@@ -17,7 +17,7 @@ blog.posts().all(function(posts){
             '<h4 class="blog-post-info-title fs-special gotham-bold">' + posts[i].title + '</h4>' +
             '<h4 class="blog-post-info-excerpt fs-h6 gotham-book">' + posts[i].excerpt + '</h4>' +
             '<div class="blog-post-info-button-container">' +
-              '<a href=" ' + posts[i].url + ' " target="_blank">' +
+              '<a href=" ' + posts[i].url + ' ">' +
                 '<button class="entos-button blog-post-info-button fs-h6 gotham-book">See more</button>' +
               '</a>' +
             '</div>' +
